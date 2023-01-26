@@ -1,0 +1,43 @@
+.user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+
+    background: #ffffff;
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+}
+
+.user-form>label,
+.user--valor-inputs__container>div>label {
+    font-weight: 400;
+    font-size: var(--font-size-12px);
+    line-height: 183%;
+    color: var(--grey-4);
+}
+
+.user-form>input,
+.user--valor-inputs__container>div>input {
+    padding: 0 1rem;
+
+    font-weight: 400;
+    font-size: var(--font-size-16px);
+    line-height: 162%;
+
+    color: var(--grey-3);
+    border: 2px solid var(--grey-1);
+    border-radius: 8px;
+}
+
+.user-form>span {
+    font-weight: 400;
+    font-size: var(--font-size-12px);
+    line-height: 167%;
+
+    color: var(--grey-3);
+}
+
+.user--valor-inputs__container {
+    display: flex;
+}
