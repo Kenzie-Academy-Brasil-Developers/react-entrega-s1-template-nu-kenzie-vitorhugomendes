@@ -1,0 +1,104 @@
+.user-transactionList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style-type: none;
+    width: 100%;
+}
+
+.transaction-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+
+    background: var(--grey-1);
+}
+
+.entrada {
+    border-left: solid 4px var(--color-secondary);
+    border-radius: 4px 0px 0px 4px;
+}
+
+.saída {
+    border-left: solid 4px var(--grey-3);
+    border-radius: 4px 0px 0px 4px;
+}
+
+.user-description__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.user-value__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.user-description__container>h2 {
+    font-weight: 700;
+    font-size: var(--font-size-22px);
+    line-height: 188%;
+
+    color: var(--grey-4)
+}
+
+.user-description__container>span {
+    font-weight: 400;
+    font-size: var(--font-size-16px);
+    line-height: 183%;
+
+    color: var(--grey-3);
+
+    text-transform: capitalize;
+}
+
+.user-value__container>p {
+    font-weight: 400;
+    font-size: var(--font-size-16px);
+    line-height: 183%;
+
+    color: var(--grey-4)
+}
+
+.user-value__container>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 22px;
+    height: 22px;
+
+    background: var(--grey-2);
+    border-radius: 2px;
+
+    cursor: pointer;
+}
+
+.user-value__container>div:hover {
+    background: var(--grey-3);
+}
+
+.user-value__container>div>img {
+    width: 12px;
+    height: 12px;
+}
+
+@media(min-width: 750px) {
+    .transaction-card {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        min-width: fit-content;
+    }
+
+    .user-value__container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 30%;
+        margin-top: 10px;
+    }
+}

@@ -12,8 +12,6 @@ export function Form({ listTransactions, setListTransactions }) {
         event.preventDefault();
 
         setListTransactions([...listTransactions, userInput]);
-
-        console.log(listTransactions);
       }}
     >
       <label htmlFor="descrição">Descrição:</label>
