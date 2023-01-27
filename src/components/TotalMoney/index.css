@@ -1,0 +1,39 @@
+.user--total-value__container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    background: #ffffff;
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+}
+
+.user--total-value__container>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user--total-value__container>div>h2 {
+    font-weight: 700;
+    font-size: var(--font-size-16px);
+    line-height: 188%;
+
+    color: var(--grey-4);
+}
+
+.user--total-value__container>div>p {
+    font-weight: 700;
+    font-size: var(--font-size-16px);
+    line-height: 188%;
+
+    color: var(--color-primary-1);
+}
+
+.user--total-value__container>span {
+    font-weight: 400;
+    font-size: var(--font-size-12px);
+    line-height: 183%;
+
+    color: var(--grey-3)
+}

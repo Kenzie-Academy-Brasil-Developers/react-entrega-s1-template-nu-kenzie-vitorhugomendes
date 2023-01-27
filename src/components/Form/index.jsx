@@ -25,16 +25,19 @@ export function Form({ listTransactions, setListTransactions }) {
         required
       />
       <span>Ex: Compra de roupas</span>
-      <div className="user--valor-inputs__container">
+      <div className="user--values-inputs__container">
         <div>
           <label htmlFor="valor">Valor</label>
-          <input
-            type="number"
-            id="valor"
-            name="valor"
-            placeholder="Insira um valor"
-            required
-          />
+          <div className="value-input__container">
+            <input
+              type="number"
+              id="valor"
+              name="valor"
+              placeholder="1"
+              required
+            />
+            <span>R$</span>
+          </div>
         </div>
         <div>
           <label htmlFor="tipoDeValor">Tipo de Valor</label>

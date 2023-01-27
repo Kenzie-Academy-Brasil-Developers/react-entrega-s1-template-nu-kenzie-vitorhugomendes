@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import landingPageImg from "./assets/landingPageImg.svg";
-import { Form } from "./components/Form";
-import { TotalMoney } from "./components/TotalMoney";
-import { List } from "./components/List";
 import "./styles/globalStyles.css";
 import "./styles/landingPage.css";
 import "./styles/homePage.css";
+
+import { Form } from "./components/Form";
+import { TotalMoney } from "./components/TotalMoney";
+import { List } from "./components/List";
 
 function App() {
   const [page, setPage] = useState("LandingPage");

@@ -24,7 +24,25 @@ body {
     max-width: 1500px;
 }
 
+ul {
+    list-style-type: none;
+}
+
+h2,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 select,
 button {
     cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
